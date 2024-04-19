@@ -20,3 +20,6 @@
 
 ### MS Product Catalog
 [![tests](https://github.com/jfelipearaujo-org/ms-product-catalog/actions/workflows/tests.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-product-catalog/actions/workflows/tests.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-product-catalog&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-product-catalog)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-product-catalog&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-product-catalog)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-product-catalog&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-product-catalog)
