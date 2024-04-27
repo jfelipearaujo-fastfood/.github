@@ -26,7 +26,7 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-product-catalog&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-product-catalog)
 
 ### MS Order Management
-[![tests](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests.yml)
+[![unit](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests_unit.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests_unit.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
