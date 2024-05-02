@@ -31,3 +31,10 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
+
+### MS Payment Management
+[![unit](https://github.com/jfelipearaujo-org/ms-payment-management/actions/workflows/tests_unit.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-payment-management/actions/workflows/tests_unit.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-payment-management&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-payment-management)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-payment-management&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-payment-management)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-payment-management&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-payment-management)
+
