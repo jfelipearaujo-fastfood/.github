@@ -1,7 +1,10 @@
 # Fast Food Org
 
 ## Infrastructure as a Code (IaC)
-- TODO
+### EKS Cluster IaC
+[![provisioning](https://github.com/jfelipearaujo-org/eks-cluster-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/eks-cluster-iac/actions/workflows/provisioning.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_eks-cluster-iac&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_eks-cluster-iac)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_eks-cluster-iac&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_eks-cluster-iac)
 
 ## Lambdas
 ### Lambda Authorizer
