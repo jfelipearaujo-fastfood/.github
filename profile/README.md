@@ -1,5 +1,15 @@
 # Fast Food Org
 
+## Deployment Order
+
+- EKS Cluster IaC
+- Databases IaC
+- Queues & Topics IaC
+- Lambda Migrator
+- Microservices
+- Other Lambdas
+- API Gateway
+
 ## Infrastructure as a Code (IaC)
 ### [EKS Cluster IaC](https://github.com/jfelipearaujo-org/eks-cluster-iac)
 [![provisioning](https://github.com/jfelipearaujo-org/eks-cluster-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/eks-cluster-iac/actions/workflows/provisioning.yml)
