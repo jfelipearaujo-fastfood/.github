@@ -7,7 +7,9 @@
 - Queues & Topics IaC
 - Lambda Migrator
 - Microservices
-- Other Lambdas
+- Lambda Register
+- Lambda Authorizer
+- Lambda Login
 - API Gateway
 
 ## Infrastructure as a Code (IaC)
