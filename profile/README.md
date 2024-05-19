@@ -38,7 +38,9 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-authorizer&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-authorizer)
 
 ### [Lambda Login](https://github.com/jfelipearaujo-org/lambda-login)
-[![tests](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/tests.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/tests.yml)
+[![unit](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/tests_unit.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/tests_unit.yml)
+[![bdd](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/tests_bdd.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/tests_bdd.yml)
+[![provisioning](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-login/actions/workflows/provisioning.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-login&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-login)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-login&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-login)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-login&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-login)
