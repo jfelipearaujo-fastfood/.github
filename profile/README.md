@@ -49,7 +49,9 @@ Visit this [link](https://miro.com/app/board/uXjVKVqKe0Y=/?share_link_id=8736462
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-login&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-login)
 
 ### [Lambda Register](https://github.com/jfelipearaujo-org/lambda-register)
-[![tests](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/tests.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/tests.yml)
+[![unit](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/tests_unit.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/tests_unit.yml)
+[![bdd](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/tests_bdd.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/tests_bdd.yml)
+[![provisioning](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/lambda-register/actions/workflows/provisioning.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-register&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-register)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-register&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-register)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_lambda-register&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_lambda-register)
