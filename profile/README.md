@@ -77,6 +77,7 @@ Visit this [link](https://miro.com/app/board/uXjVKVqKe0Y=/?share_link_id=8736462
 ### [MS Order Management](https://github.com/jfelipearaujo-org/ms-order-management)
 [![unit](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests_unit.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests_unit.yml)
 [![bdd](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests_bdd.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/tests_bdd.yml)
+[![provisioning](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/ms-order-management/actions/workflows/provisioning.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-order-management&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-order-management)
