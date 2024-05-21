@@ -5,7 +5,7 @@ Visit this [link](https://miro.com/app/board/uXjVKVqKe0Y=/?share_link_id=8736462
 
 ### Download Postman Collection
 
-Click [here](./postman_collection.json) to download the Postman Collection.
+Click [here](https://github.com/jfelipearaujo-org/.github/blob/main/profile/postman_collection.json) to download the Postman Collection.
 
 ## Deployment Order
 
