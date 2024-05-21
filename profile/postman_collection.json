@@ -1,0 +1,1222 @@
+{
+	"info": {
+		"_postman_id": "5a58e30f-4c64-4493-a0b5-8af8b478f927",
+		"name": "CtrlEat v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30871606"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Cadastrar cliente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var status = pm.response.code;\r",
+									"\r",
+									"if (status === 201) {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"token\", jsonData.access_token);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth",
+								"value": "allow",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpf\": \"507.828.240-80\",\r\n  \"pass\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Realiza o cadastro de um cliente.\n\nOs dados pessoais podem ou não ser informados."
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar cliente Anônimo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var status = pm.response.code;\r",
+									"\r",
+									"if (status === 201) {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"token\", jsonData.access_token);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth",
+								"value": "allow",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Realiza o cadastro de um cliente.\n\nOs dados pessoais podem ou não ser informados."
+					},
+					"response": []
+				},
+				{
+					"name": "Autenticar cliente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var status = pm.response.code;\r",
+									"\r",
+									"if (status === 201) {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"token\", jsonData.access_token);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth",
+								"value": "allow",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpf\": \"507.828.240-80\",\r\n  \"pass\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"login"
+							]
+						},
+						"description": "Realiza o cadastro de um cliente.\n\nOs dados pessoais podem ou não ser informados."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products-catalog/health",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"health"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products-catalog/api/v1/categories",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"api",
+								"v1",
+								"categories"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products-catalog/api/v1/categories/5ffced3f-58c9-4b65-8a99-440c1a1cdc69",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"api",
+								"v1",
+								"categories",
+								"5ffced3f-58c9-4b65-8a99-440c1a1cdc69"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Bebidas\",\r\n    \"description\": \"Bebidas diversas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/products-catalog/api/v1/categories",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"api",
+								"v1",
+								"categories"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				}
+			],
+			"description": "Rotas relacionadas à infraestrutura da API."
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products-catalog/health",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"health"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products-catalog/api/v1/products",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"api",
+								"v1",
+								"products"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products-catalog/api/v1/products/3822eb8e-3da9-416e-a248-3551fc628566",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"api",
+								"v1",
+								"products",
+								"3822eb8e-3da9-416e-a248-3551fc628566"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Refrigerante\",\r\n    \"description\": \"Refrigerante de 300ml\",\r\n    \"price\": 19.99,\r\n    \"category_title\": \"Bebidas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/products-catalog/api/v1/products",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products-catalog",
+								"api",
+								"v1",
+								"products"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				}
+			],
+			"description": "Rotas relacionadas à infraestrutura da API."
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/orders-mgmt/health",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"health"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var status = pm.response.code;\r",
+									"\r",
+									"if (status === 201) {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"order_id\", jsonData.id);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customer_id\": \"bfaaa864-ee29-44d6-ae1e-89d003217095\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/orders-mgmt/api/v1/orders",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"api",
+								"v1",
+								"orders"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Order by ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var status = pm.response.code;\r",
+									"\r",
+									"if (status === 200) {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    var payments = jsonData.payments;\r",
+									"\r",
+									"    if (payments && payments.length > 0) {\r",
+									"        pm.environment.set(\"payment_id\", payments[0].payment_id);\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/orders-mgmt/api/v1/orders/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"api",
+								"v1",
+								"orders",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"state\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/orders-mgmt/api/v1/orders/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"api",
+								"v1",
+								"orders",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Order by Customer ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var status = pm.response.code;\r",
+									"\r",
+									"if (status === 200) {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"order_id\", jsonData.id);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/orders-mgmt/api/v1/orders/customer/575b835f-c749-499b-9b5d-102bafe401ae",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"api",
+								"v1",
+								"orders",
+								"customer",
+								"575b835f-c749-499b-9b5d-102bafe401ae"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Add item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": \"3822eb8e-3da9-416e-a248-3551fc628566\",\r\n            \"name\": \"Hamburguer\",\r\n            \"unit_price\": 39.99,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": \"ca685ace-ef25-4aa3-97f5-489394aa6356\",\r\n            \"name\": \"Refrigerante\",\r\n            \"unit_price\": 19.99,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/orders-mgmt/api/v1/orders/{{order_id}}/items",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"api",
+								"v1",
+								"orders",
+								"{{order_id}}",
+								"items"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Send to payment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/orders-mgmt/api/v1/orders/{{order_id}}/payment",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders-mgmt",
+								"api",
+								"v1",
+								"orders",
+								"{{order_id}}",
+								"payment"
+							],
+							"query": [
+								{
+									"key": "resend",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				}
+			],
+			"description": "Rotas relacionadas à infraestrutura da API."
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/payments-mgmt/health",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"payments-mgmt",
+								"health"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Order ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/payments-mgmt/api/v1/payments/order/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"payments-mgmt",
+								"api",
+								"v1",
+								"payments",
+								"order",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"approved\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/payments-mgmt/api/v1/payments/webhook/{{payment_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"payments-mgmt",
+								"api",
+								"v1",
+								"payments",
+								"webhook",
+								"{{payment_id}}"
+							],
+							"query": [
+								{
+									"key": "resend",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				}
+			],
+			"description": "Rotas relacionadas à infraestrutura da API."
+		},
+		{
+			"name": "Productions",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/productions-mgmt/health",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"productions-mgmt",
+								"health"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Order ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/productions-mgmt/api/v1/production/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"productions-mgmt",
+								"api",
+								"v1",
+								"production",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Get by State",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/productions-mgmt/api/v1/production?state=Received",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"productions-mgmt",
+								"api",
+								"v1",
+								"production"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "Received"
+								},
+								{
+									"key": "state",
+									"value": "Processing",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "Completed",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "Delivered",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Update state - Processing",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": \"Processing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/productions-mgmt/api/v1/production/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"productions-mgmt",
+								"api",
+								"v1",
+								"production",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Update state - Completed",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": \"Completed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/productions-mgmt/api/v1/production/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"productions-mgmt",
+								"api",
+								"v1",
+								"production",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				},
+				{
+					"name": "Update state - Delivered",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": \"Delivered\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/productions-mgmt/api/v1/production/{{order_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"productions-mgmt",
+								"api",
+								"v1",
+								"production",
+								"{{order_id}}"
+							]
+						},
+						"description": "Realiza uma verificação da saúde da aplicação."
+					},
+					"response": []
+				}
+			],
+			"description": "Rotas relacionadas à infraestrutura da API."
+		}
+	]
+}
