@@ -3,6 +3,10 @@
 ### Microservices Diagram
 Visit this [link](https://miro.com/app/board/uXjVKVqKe0Y=/?share_link_id=873646210769) to visualize the diagram.
 
+### Download Postman Collection
+
+Click [here](./postman_collection.json) to download the Postman Collection.
+
 ## Deployment Order
 
 - EKS Cluster IaC
