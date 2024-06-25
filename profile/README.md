@@ -106,3 +106,11 @@ Click [here](https://github.com/jfelipearaujo-org/.github/blob/main/profile/post
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-production-management&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-production-management)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-production-management&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-production-management)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-production-management&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-production-management)
+
+### [MS Customer Management](https://github.com/jfelipearaujo-org/ms-customer-management)
+- unit
+- bdd
+- provisioning
+- quality gate
+- coverage
+- vulnerability
