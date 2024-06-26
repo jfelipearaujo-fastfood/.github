@@ -111,6 +111,6 @@ Click [here](https://github.com/jfelipearaujo-org/.github/blob/main/profile/post
 - unit
 - bdd
 - provisioning
-- quality gate
-- coverage
-- vulnerability
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-customer-management&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-customer-management)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-customer-management&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-customer-management)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_ms-customer-management&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_ms-customer-management)
