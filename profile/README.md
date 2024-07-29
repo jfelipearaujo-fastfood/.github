@@ -22,8 +22,8 @@ Click [here](https://github.com/jfelipearaujo-org/.github/blob/main/profile/post
 ## Infrastructure as a Code (IaC)
 ### [EKS Cluster IaC](https://github.com/jfelipearaujo-org/eks-cluster-iac)
 [![provisioning](https://github.com/jfelipearaujo-org/eks-cluster-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/eks-cluster-iac/actions/workflows/provisioning.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_eks-cluster-iac&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_eks-cluster-iac)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_eks-cluster-iac&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_eks-cluster-iac)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_eks-cluster-iac&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_eks-cluster-iac)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_eks-cluster-iac&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_eks-cluster-iac)
 
 ### [Databases IaC](https://github.com/jfelipearaujo-org/database-iac)
 [![provisioning](https://github.com/jfelipearaujo-org/database-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/database-iac/actions/workflows/provisioning.yml)
