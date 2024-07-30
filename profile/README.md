@@ -27,8 +27,8 @@ Click [here](https://github.com/jfelipearaujo-org/.github/blob/main/profile/post
 
 ### [Databases IaC](https://github.com/jfelipearaujo-org/database-iac)
 [![provisioning](https://github.com/jfelipearaujo-org/database-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/database-iac/actions/workflows/provisioning.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_database-iac&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_database-iac)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-org_database-iac&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-org_database-iac)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_database-iac&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_database-iac)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_database-iac&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_database-iac)
 
 ### [Queues & Topics IaC](https://github.com/jfelipearaujo-org/queues-topics-iac)
 [![provisioning](https://github.com/jfelipearaujo-org/queues-topics-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-org/queues-topics-iac/actions/workflows/provisioning.yml)
