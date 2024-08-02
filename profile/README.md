@@ -69,9 +69,9 @@ Click [here](https://github.com/jfelipearaujo-fastfood/.github/blob/main/profile
 [![unit](https://github.com/jfelipearaujo-fastfood/lambda-migrator/actions/workflows/tests_unit.yml/badge.svg)](https://github.com/jfelipearaujo-fastfood/lambda-migrator/actions/workflows/tests_unit.yml)
 [![bdd](https://github.com/jfelipearaujo-fastfood/lambda-migrator/actions/workflows/tests_bdd.yml/badge.svg)](https://github.com/jfelipearaujo-fastfood/lambda-migrator/actions/workflows/tests_bdd.yml)
 [![provisioning](https://github.com/jfelipearaujo-fastfood/lambda-migrator/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-fastfood/lambda-migrator/actions/workflows/provisioning.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_rds-database&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_rds-database)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_rds-database&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_rds-database)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_rds-database&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_rds-database)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_lambda-migrator&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_lambda-migrator)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_lambda-migrator&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_lambda-migrator)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jfelipearaujo-fastfood_lambda-migrator&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jfelipearaujo-fastfood_lambda-migrator)
 
 ## Microservices
 
