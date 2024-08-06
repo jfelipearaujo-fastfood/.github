@@ -19,6 +19,82 @@ Click [here](https://github.com/jfelipearaujo-fastfood/.github/blob/main/profile
 - Lambda Login
 - API Gateway
 
+## RIPD Report
+
+The RIPD report can be found [here](./ripd/RIPD.pdf).
+
+## OWASP Zap Reports
+
+Bellow you can find the OWASP Zap reports for the project.
+
+Since none of the reports returned high severity issues, no fixes were applied to the project.
+
+### List products
+
+To view the PDF report, click [here](./owasp/2024-08-05-ZAP-Report-Listar%20Cardapio.pdf).
+
+| Risk Level     | Number of Alerts |
+| -------------- | ---------------- |
+| High           | 0                |
+| Medium         | 0                |
+| Low            | 2                |
+| Information    | 1                |
+| False Positive | 0                |
+
+### Checkout 
+
+To view the PDF report, click [here](./owasp/2024-08-05-ZAP-Report-Realizacao%20Pedido.pdf).
+
+| Risk Level     | Number of Alerts |
+| -------------- | ---------------- |
+| High           | 0                |
+| Medium         | 0                |
+| Low            | 1                |
+| Information    | 0                |
+| False Positive | 0                |
+
+### Payment generation
+
+To view the PDF report, click [here](./owasp/2024-08-05-ZAP-Report-Geracao%20Pagamento.pdf).
+
+| Risk Level     | Number of Alerts |
+| -------------- | ---------------- |
+| High           | 0                |
+| Medium         | 0                |
+| Low            | 1                |
+| Information    | 0                |
+| False Positive | 0                |
+
+### Payment confirmation
+
+To view the PDF report, click [here](./owasp/2024-08-05-ZAP-Report-Confirmacao%20Pagamento%20via%20Webhook.pdf).
+
+| Risk Level     | Number of Alerts |
+| -------------- | ---------------- |
+| High           | 0                |
+| Medium         | 0                |
+| Low            | 1                |
+| Information    | 0                |
+| False Positive | 0                |
+
+## SAGA
+
+The SAGA pattern chosen for the project is the Choreographed Saga Pattern. This pattern was chosen because it is a good fit for the use case of the application, which is a microservices architecture. Since the project is not so big or complex, the use case is simple enough to be implemented with this pattern.
+
+Bellow is a diagram of the SAGA pattern when the order follows the "happy path":
+
+![happy-path](./saga/saga.png)
+
+But when the order follows the "unhappy path", like an invalid payment, the compensation flow is used to handle the exception:
+
+![unhappy-path](./saga/saga_compensation.png)
+
+## Architecture
+
+The diagram below shows the architecture of the project:
+
+![architecture](./architecture/architecture.png)
+
 ## Infrastructure as a Code (IaC)
 ### [EKS Cluster IaC](https://github.com/jfelipearaujo-fastfood/eks-cluster-iac)
 [![provisioning](https://github.com/jfelipearaujo-fastfood/eks-cluster-iac/actions/workflows/provisioning.yml/badge.svg)](https://github.com/jfelipearaujo-fastfood/eks-cluster-iac/actions/workflows/provisioning.yml)

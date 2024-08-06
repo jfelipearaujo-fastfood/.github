@@ -40,13 +40,7 @@
 					],
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "Auth",
-								"value": "allow",
-								"disabled": true
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"cpf\": \"507.828.240-80\",\r\n  \"pass\": \"12345678\"\r\n}",
@@ -161,13 +155,7 @@
 					],
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "Auth",
-								"value": "allow",
-								"disabled": true
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"cpf\": \"507.828.240-80\",\r\n  \"pass\": \"12345678\"\r\n}",
@@ -196,45 +184,20 @@
 			"name": "Category",
 			"item": [
 				{
-					"name": "Health Check",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"url": {
-							"raw": "{{host}}/products-catalog/health",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"products-catalog",
-								"health"
-							]
-						},
-						"description": "Realiza uma verificação da saúde da aplicação."
-					},
-					"response": []
-				},
-				{
 					"name": "Categories",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/products-catalog/api/v1/categories",
 							"host": [
@@ -255,15 +218,17 @@
 					"name": "Category",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/products-catalog/api/v1/categories/5ffced3f-58c9-4b65-8a99-440c1a1cdc69",
 							"host": [
@@ -285,15 +250,17 @@
 					"name": "Category",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"title\": \"Bebidas\",\r\n    \"description\": \"Bebidas diversas\"\r\n}",
@@ -323,48 +290,61 @@
 			"description": "Rotas relacionadas à infraestrutura da API."
 		},
 		{
-			"name": "Products",
+			"name": "Customer",
 			"item": [
 				{
-					"name": "Health Check",
+					"name": "Request delete account",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"method": "POST",
+						"header": [],
 						"url": {
-							"raw": "{{host}}/products-catalog/health",
+							"raw": "{{host}}/customer-mgmt/api/v1/customers/delete-account",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"products-catalog",
-								"health"
+								"customer-mgmt",
+								"api",
+								"v1",
+								"customers",
+								"delete-account"
 							]
 						},
 						"description": "Realiza uma verificação da saúde da aplicação."
 					},
 					"response": []
-				},
+				}
+			],
+			"description": "Rotas relacionadas à infraestrutura da API."
+		},
+		{
+			"name": "Products",
+			"item": [
 				{
 					"name": "Products",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/products-catalog/api/v1/products",
 							"host": [
@@ -385,15 +365,17 @@
 					"name": "Product",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/products-catalog/api/v1/products/3822eb8e-3da9-416e-a248-3551fc628566",
 							"host": [
@@ -415,15 +397,17 @@
 					"name": "Product",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"title\": \"Refrigerante\",\r\n    \"description\": \"Refrigerante de 300ml\",\r\n    \"price\": 19.99,\r\n    \"category_title\": \"Bebidas\"\r\n}",
@@ -456,33 +440,6 @@
 			"name": "Orders",
 			"item": [
 				{
-					"name": "Health Check",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"url": {
-							"raw": "{{host}}/orders-mgmt/health",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"orders-mgmt",
-								"health"
-							]
-						},
-						"description": "Realiza uma verificação da saúde da aplicação."
-					},
-					"response": []
-				},
-				{
 					"name": "Order",
 					"event": [
 						{
@@ -503,24 +460,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"customer_id\": \"bfaaa864-ee29-44d6-ae1e-89d003217095\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
+						"header": [],
 						"url": {
 							"raw": "{{host}}/orders-mgmt/api/v1/orders",
 							"host": [
@@ -562,15 +512,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/orders-mgmt/api/v1/orders/{{order_id}}",
 							"host": [
@@ -604,15 +556,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"state\": 2\r\n}",
@@ -640,7 +594,7 @@
 					"response": []
 				},
 				{
-					"name": "Order by Customer ID",
+					"name": "Order by Customer",
 					"event": [
 						{
 							"listen": "test",
@@ -660,17 +614,19 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
-							"raw": "{{host}}/orders-mgmt/api/v1/orders/customer/575b835f-c749-499b-9b5d-102bafe401ae",
+							"raw": "{{host}}/orders-mgmt/api/v1/orders/customer",
 							"host": [
 								"{{host}}"
 							],
@@ -679,8 +635,7 @@
 								"api",
 								"v1",
 								"orders",
-								"customer",
-								"575b835f-c749-499b-9b5d-102bafe401ae"
+								"customer"
 							]
 						},
 						"description": "Realiza uma verificação da saúde da aplicação."
@@ -703,15 +658,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": \"3822eb8e-3da9-416e-a248-3551fc628566\",\r\n            \"name\": \"Hamburguer\",\r\n            \"unit_price\": 39.99,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": \"ca685ace-ef25-4aa3-97f5-489394aa6356\",\r\n            \"name\": \"Refrigerante\",\r\n            \"unit_price\": 19.99,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
@@ -755,15 +712,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/orders-mgmt/api/v1/orders/{{order_id}}/payment",
 							"host": [
@@ -796,33 +755,6 @@
 			"name": "Payments",
 			"item": [
 				{
-					"name": "Health Check",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"url": {
-							"raw": "{{host}}/payments-mgmt/health",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"payments-mgmt",
-								"health"
-							]
-						},
-						"description": "Realiza uma verificação da saúde da aplicação."
-					},
-					"response": []
-				},
-				{
 					"name": "Get by Order ID",
 					"event": [
 						{
@@ -838,15 +770,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/payments-mgmt/api/v1/payments/order/{{order_id}}",
 							"host": [
@@ -881,15 +815,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"approved\": true\r\n}",
@@ -931,33 +867,6 @@
 			"name": "Productions",
 			"item": [
 				{
-					"name": "Health Check",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"url": {
-							"raw": "{{host}}/productions-mgmt/health",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"productions-mgmt",
-								"health"
-							]
-						},
-						"description": "Realiza uma verificação da saúde da aplicação."
-					},
-					"response": []
-				},
-				{
 					"name": "Get by Order ID",
 					"event": [
 						{
@@ -973,15 +882,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/productions-mgmt/api/v1/production/{{order_id}}",
 							"host": [
@@ -1015,15 +926,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{host}}/productions-mgmt/api/v1/production?state=Received",
 							"host": [
@@ -1077,15 +990,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"state\": \"Processing\"\r\n}",
@@ -1128,16 +1043,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}",
-								"disabled": true
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"state\": \"Completed\"\r\n}",
@@ -1180,15 +1096,17 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"state\": \"Delivered\"\r\n}",
